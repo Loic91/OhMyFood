@@ -1,0 +1,577 @@
+body{
+    margin: 0;
+}
+
+#bloc_page{
+    width: 1200px;
+    margin: auto;
+}
+
+#logo img{
+    width: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* placement du logo dans un "display: bloc" et les propriété "margin" le placent au milieu */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header{
+    background-color: #61A682;
+}
+
+/* !!!!!!!!! Menu côte à côte !!!!!!!! */
+.menu{
+    width: 1000px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.menu_bloc_1 ul{
+	display: flex; 
+	justify-content: space-between; /* Éléments centrés et étirés sur tout l'axe */
+	list-style-type: none;
+}
+	
+.menu_bloc_1 li{
+    box-shadow: 4px 4px 4px  #CFE1D8;
+    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
+    display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
+    overflow: hidden; /* permet de cacher le débordement du zoom */
+    
+}
+
+.menu_bloc_1 li :hover {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+}
+
+.menu_bloc_1 img{
+    max-width: 450px;
+    margin-bottom: -5px;
+}
+
+.menu_bloc_2 ul{
+	display: flex; 
+	justify-content: space-between; /* Éléments centrés et étirés sur tout l'axe */
+    list-style-type: none;
+}
+	
+.menu_bloc_2 li{
+    box-shadow: 4px 4px 4px  #CFE1D8;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
+    display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
+    overflow: hidden; /* permet de cacher le débordement du zoom */
+}
+
+.menu_bloc_2 img{
+    max-width: 450px;
+    margin-bottom: -5px;
+}
+
+.menu_bloc_2 li :hover {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+}
+
+
+/* !!!!!!!!! Bouton Prochainemment !!!!!!!!! */
+$cd-btn: #61A682;
+.btn {
+    background: $cd-btn;
+    font-size: 2rem;
+    cursor: pointer;
+	padding: 1.2rem 2rem;
+	border-radius: 20px;
+	border: 1px solid #F9CC27;
+}
+
+.container_bouton{
+    display: flex;
+	justify-content: center;
+	margin-bottom: 150px;
+}
+
+.btn a{
+	text-decoration: none;
+	color: #F9CC27;
+}
+/* Animation des points de suspensions */
+.btn{
+    #point_1 {
+        background: #F9CC27;
+        opacity: 0.5;
+    }
+    
+    #point_2 {
+        background: #F9CC27;
+        opacity: 0.7;
+        animation-delay: -1.1s;
+    }
+    
+    #point_3 {
+        background: #F9CC27;
+        opacity: 0.9;
+        animation-delay: -0.9s;
+    }
+    
+    .point {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 10px;
+        animation: points_suspension 1.3s linear infinite;
+    }
+    
+    @keyframes points_suspension {
+        0%, 60%, 100% {
+            transform: initial;
+        }
+        30% {
+            transform: translateY(-15px);
+        }
+    }
+}
+
+
+/* !!!!!!!!! Footer !!!!!!!! */
+footer{
+    display: flex;
+    background-color: #61A682;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#mentions ul{
+	list-style-type: none;
+    display: flex;
+}
+
+#mentions li{
+	padding-right: 50px;
+	padding-left: 50px;
+	font-size: 1.1em;
+    font-family: Montserrat, sans-serif;
+}
+
+#mentions li:hover{
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;
+}
+
+#mentions a{
+	text-decoration: none;
+    color: #F9CC27;
+}
+
+#mentions a:hover{
+    color: white;
+}
+
+@keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+}
+
+/* !!!!!!!!!! Carte des Menus !!!!!!!!!! */
+/* Menu 1*/
+#bloc_menu_1{
+    width: 90%;
+    background-color: #fcdfdb;
+    box-shadow: 6px 6px 6px  #CFE1D8;
+
+    /* Cela me permet de centrer le menu */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu 2 */
+#bloc_menu_2{
+    width: 90%;
+    background-color: #FFF5FE;
+    box-shadow: 6px 6px 6px  #CFE1D8;
+
+    /* Cela me permet de centrer le menu */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu 3 */
+#bloc_menu_3{
+    width: 90%;
+    background-color: #EDEFEF;
+    box-shadow: 6px 6px 6px  #CFE1D8;
+
+    /* Cela me permet de centrer le menu */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu 4 */
+#bloc_menu_4{
+    width: 90%;
+    background-color: #FDFFFD;
+    box-shadow: 6px 6px 6px  #CFE1D8;
+
+    /* Cela me permet de centrer le menu */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    font-family: 'Cookie', cursive;
+    font-size: 1.3em;
+}
+
+.container_1{
+    color: #C67412;
+}
+.container_2{
+    color: #A56799;
+}
+.container_3{
+    color: #6E4CCC;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.container_1_menu3, .container_2_menu3, .container_3_menu3{
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3em;
+}
+
+.container_3_menu3{
+    margin-bottom: 80px;
+    padding-bottom: 50px;
+}
+
+.titre_souligne, .titre_souligne_2, .titre_souligne_3{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3em;
+}
+
+.titre_souligne_menu2, .titre_souligne_2_menu2, .titre_souligne_3_menu2{
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2em;
+}
+.titre_souligne_menu2{
+    color: #C67412;
+}
+.titre_souligne_2_menu2{
+    color: #A56799;
+}
+.titre_souligne_3_menu2{
+    color: #6E4CCC;
+} 
+
+.titre_souligne_menu3, .titre_souligne_2_menu3, .titre_souligne_3_menu3{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3em;
+}
+
+
+/*  Menu 2 - soulignement  */
+#phrase1 :after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: #C67412;
+}
+
+
+#phrase1 :hover:after {
+        width: 100%;
+}
+
+#phrase1 {
+    display: inline;
+    position: relative;
+    color: #A56799;
+    text-decoration: none;
+}
+
+#phrase2 :after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: #A56799;
+}
+
+#phrase2 :hover:after {
+        width: 100%;
+}
+
+#phrase2 {
+    display: inline;
+    position: relative;
+    color: #C67412;
+    text-decoration: none;
+}
+
+#phrase3 :after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: #6E4CCC;
+}
+
+#phrase3 :hover:after {
+        width: 100%;
+}
+
+#phrase3 {
+    display: inline;
+    position: relative;
+    color: #6E4CCC;
+    text-decoration: none;
+}
+
+/*  Menu 1 - soulignement */
+a {
+    display: inline;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+a :after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: black;
+}
+
+a :hover:after {
+        width: 100%;
+}
+
+
+h1{
+    font-family: 'Cookie', cursive; /* Menu 1 */
+    font-size: 3.5em;
+}
+
+.icone{
+    font-size: 1.5em;
+}
+
+.nom_menu{
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* Dégradé de l'icone "Music" */
+.fa-music:before {
+    background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu_titre{
+    text-align: center;
+}
+
+/* Menu 1 */
+/* entree */
+.trait_gauche{
+    margin-right: 100px;
+}
+.trait_droit{
+    margin-left: 100px;
+}
+/* plat */
+.trait_gauche2{
+    margin-right: 70px;
+}
+.trait_droit2{
+    margin-left: 70px;
+}
+/* dessert*/
+.trait_gauche3{
+    margin-right: 50px;
+}
+.trait_droit3{
+    margin-left: 50px;
+}
+
+/* Menu dégradé (Menu 2) */
+.menu_degrade{
+    /* Titre du Menu */
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    background: linear-gradient(to left, #6E4CCC 0%,  #A56799 50%, #C67412 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Menu dégradé (Menu 3) */
+.menu_degrade_2{
+    /* Titre du Menu */
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    background: linear-gradient(to left, #C5E0F9 0%, #0228DD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Menu dégradé (Menu 4) */
+.menu_degrade_3{
+    /* Titre du Menu */
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    background: linear-gradient(to left, #BFFF80 0%, #3E923A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* entree */
+.trait_gauche_menu2{
+    margin-right: 5px;
+}
+.trait_droit_menu2{
+    margin-left: 5px;
+}
+/* plat */
+.trait_gauche2_menu2{
+    margin-right: 45px;
+}
+.trait_droit2_menu2{
+    margin-left: 45px;
+}
+/* dessert*/
+.trait_gauche3_menu2{
+    margin-right: 30px;
+}
+.trait_droit3_menu2{
+    margin-left: 30px;
+}
+
+
+/* entree */
+.trait_gauche_menu3{
+    margin-right: 25px;
+}
+.trait_droit_menu3{
+    margin-left: 25px;
+}
+/* plat */
+.trait_gauche2_menu3{
+    margin-right: 45px;
+}
+.trait_droit2_menu3{
+    margin-left: 45px;
+}
+/* dessert*/
+.trait_gauche3_menu3{
+    margin-right: 40px;
+}
+.trait_droit3_menu3{
+    margin-left: 40px;
+}
+
+/* entree */
+.trait_gauche_menu4{
+    margin-right: 60px;
+}
+.trait_droit_menu4{
+    margin-left: 60px;
+}
+/* plat */
+.trait_gauche2_menu4{
+    margin-right: 10px;
+}
+.trait_droit2_menu4{
+    margin-left: 10px;
+}
+/* dessert*/
+.trait_gauche3_menu4{
+    margin-right: 7px;
+}
+.trait_droit3_menu4{
+    margin-left: 7px;
+}
+
+.menu_entree{
+    /* texte du menu et prix alignés chacun aux extrémités */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    flex: 1 1 0;
+    line-height: 1.2rem;
+    margin-left: 105px;
+    margin-right: 105px;
+}
+
+#prix_size{
+    font-size: 1.6em;
+}
+
+
+#phrase_footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-family: 'Cookie', cursive;
+    font-size: 1.5em;
+}
+
+#phrase_footer i{
+    font-size: 60px;
+}
+
+h3{
+    margin-left: 25px;
+}
