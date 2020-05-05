@@ -150,10 +150,10 @@ footer {
   display: flex; }
 
 #mentions li {
-  padding-right: 50px;
-  padding-left: 50px;
   font-size: 1.1em;
-  font-family: Montserrat, sans-serif; }
+  font-family: Montserrat, sans-serif;
+  padding-left: 30px;
+  padding-right: 30px; }
 
 #mentions li:hover {
   animation: wiggle 75ms infinite;
@@ -214,6 +214,13 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+/* Changement Opacity au survol des Menu */
+li .opacity {
+  opacity: 0.5; }
+
+li .opacity:hover {
+  opacity: 1; }
 
 main {
   font-family: 'Cookie', cursive;
@@ -343,6 +350,10 @@ a :hover:after {
   width: 100%; }
 
 h1 {
+  text-align: center;
+  font-size: 1.5em; }
+
+h2 {
   font-family: 'Cookie', cursive;
   /* Menu 1 */
   font-size: 3.5em; }
@@ -367,24 +378,24 @@ h1 {
 /* Menu 1 */
 /* entree */
 .trait_gauche {
-  margin-right: 100px; }
+  margin-right: 120px; }
 
 .trait_droit {
-  margin-left: 100px; }
+  margin-left: 120px; }
 
 /* plat */
 .trait_gauche2 {
-  margin-right: 70px; }
+  margin-right: 95px; }
 
 .trait_droit2 {
-  margin-left: 70px; }
+  margin-left: 95px; }
 
 /* dessert*/
 .trait_gauche3 {
-  margin-right: 50px; }
+  margin-right: 80px; }
 
 .trait_droit3 {
-  margin-left: 50px; }
+  margin-left: 80px; }
 
 /* Menu dégradé (Menu 2) */
 .menu_degrade {
@@ -421,66 +432,66 @@ h1 {
 
 /* entree */
 .trait_gauche_menu2 {
-  margin-right: 5px; }
+  margin-right: 0px; }
 
 .trait_droit_menu2 {
-  margin-left: 5px; }
+  margin-left: 0px; }
 
 /* plat */
 .trait_gauche2_menu2 {
-  margin-right: 45px; }
+  margin-right: 20px; }
 
 .trait_droit2_menu2 {
-  margin-left: 45px; }
+  margin-left: 20px; }
 
 /* dessert*/
 .trait_gauche3_menu2 {
-  margin-right: 30px; }
+  margin-right: 5px; }
 
 .trait_droit3_menu2 {
-  margin-left: 30px; }
+  margin-left: 5px; }
 
 /* entree */
 .trait_gauche_menu3 {
-  margin-right: 25px; }
+  margin-right: 15px; }
 
 .trait_droit_menu3 {
-  margin-left: 25px; }
+  margin-left: 15px; }
 
 /* plat */
 .trait_gauche2_menu3 {
-  margin-right: 45px; }
+  margin-right: 35px; }
 
 .trait_droit2_menu3 {
-  margin-left: 45px; }
+  margin-left: 35px; }
 
 /* dessert*/
 .trait_gauche3_menu3 {
-  margin-right: 40px; }
+  margin-right: 30px; }
 
 .trait_droit3_menu3 {
-  margin-left: 40px; }
+  margin-left: 30px; }
 
 /* entree */
 .trait_gauche_menu4 {
-  margin-right: 60px; }
+  margin-right: 40px; }
 
 .trait_droit_menu4 {
-  margin-left: 60px; }
+  margin-left: 40px; }
 
 /* plat */
 .trait_gauche2_menu4 {
-  margin-right: 10px; }
+  margin-right: 4px; }
 
 .trait_droit2_menu4 {
-  margin-left: 10px; }
+  margin-left: 4px; }
 
 /* dessert*/
 .trait_gauche3_menu4 {
-  margin-right: 7px; }
+  margin-right: 1px; }
 
 .trait_droit3_menu4 {
-  margin-left: 7px; }
+  margin-left: 1px; }
 
 .menu_entree {
   /* texte du menu et prix alignés chacun aux extrémités */
