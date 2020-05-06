@@ -85,18 +85,19 @@ header {
   -moz-transform: scale(1.2);
   /* Firefox */
   -webkit-transform: scale(1.2);
-  /* Safari and Chrome */
+  /* Safari et Chrome */
   -o-transform: scale(1.2);
   /* Opera */ }
 
 /* !!!!!!!!! Bouton Prochainemment !!!!!!!!! */
 .btn {
   background: #61A682;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   padding: 1.2rem 2rem;
   border-radius: 20px;
-  border: 1px solid #F9CC27; }
+  border: 1px solid #F9CC27;
+  font-family: Montserrat, sans-serif; }
 
 .container_bouton {
   display: flex;
@@ -138,32 +139,33 @@ header {
 
 /* !!!!!!!!! Footer !!!!!!!! */
 footer {
-  display: flex;
+  height: 70px;
+  width: 100%;
   background-color: #61A682;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  bottom: 0;
-  width: 100%; }
+  left: 0;
+  bottom: 0; }
 
-#mentions ul {
-  list-style-type: none;
-  display: flex; }
+footer button {
+  height: 100%;
+  padding: 17px;
+  font-size: 22px;
+  background-color: #61A682;
+  border: none;
+  color: #FDCB46;
+  font-family: Montserrat, sans-serif; }
 
-#mentions li {
-  font-size: 1.1em;
-  font-family: Montserrat, sans-serif;
-  padding-left: 30px;
-  padding-right: 30px; }
-
-#mentions li:hover {
+button:hover {
   animation: wiggle 75ms infinite;
   animation-timing-function: linear; }
 
-#mentions a {
+a {
   text-decoration: none;
   color: #F9CC27; }
 
-#mentions a:hover {
+button a:hover {
   color: white; }
 
 @keyframes wiggle {

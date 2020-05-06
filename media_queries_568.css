@@ -1,0 +1,40 @@
+@media screen and (max-width: 568px) {
+    
+    header{
+        width: 310%;
+    }
+
+    #logo img{
+    width: 700px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* placement du logo dans un "display: bloc" et les propriété "margin" le placent au milieu */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    }
+
+    #bloc_page {
+        width: auto;
+    }
+
+    footer{
+        height: 200px;
+        width: 100%;
+        background-color: #579C87;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    footer button{
+        height: 100%;
+        padding: 17px;
+        font-size: 50px;
+        background-color: #579C87;
+        border: none;
+        color: #FDCB46;
+        font-family: Montserrat, sans-serif;
+    }
+}
