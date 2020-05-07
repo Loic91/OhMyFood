@@ -1,21 +1,16 @@
-@media screen and (max-width: 568px) {
-    
-    header{
-        width: 310%;
+@media screen and (max-width: 568px) { 
+#logo img{
+    width: 720px;
+    background-color: #579C87;
+    padding-left: 155px;
+    padding-right: 185px;
     }
 
-    #logo img{
-    width: 700px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    /* placement du logo dans un "display: bloc" et les propriété "margin" le placent au milieu */
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-    }
-
-    #bloc_page {
-        width: auto;
+    #bloc_page{
+        width: 250%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 250px;
     }
 
     footer{
@@ -37,4 +32,78 @@
         color: #FDCB46;
         font-family: Montserrat, sans-serif;
     }
+
+    .menu{
+        padding-right: 40px;
+    }
+
+    .container_bouton{
+        margin-bottom: 350px;
+    }
+
+    .btn {
+        font-size: 3.5rem;
+        padding: 4.2rem 5rem;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .trait_gauche_menu2{
+        margin-right: -7px;
+    }
+    .trait_droit_menu2{
+        margin-left: -7px;
+    }
+    .trait_gauche2_menu2{
+        margin-right: 3px;
+    }
+    .trait_droit2_menu2{
+        margin-left: 3px;
+    }
+    .trait_gauche3_menu2{
+        margin-right: -5px;
+    }
+    .trait_droit3_menu2{
+        margin-left: -5px;
+    }
+
+    .trait_gauche_menu3{
+        margin-right: -20px;
+    }
+    .trait_droit_menu3{
+        margin-left: -20px;
+    }
+    .trait_gauche2_menu3{
+        margin-right: 0px;
+    }
+    .trait_droit2_menu3{
+        margin-left: 0px;
+    }
+    .trait_gauche3_menu3{
+        margin-right: 0px;
+    }
+    .trait_droit3_menu3{
+        margin-left: 0px;
+    }
+
+    .trait_gauche_menu4{
+        margin-right: 0px;
+    }
+    .trait_droit_menu4{
+        margin-left: 0px;
+    }
+    .trait_gauche2_menu4{
+        margin-right: -40px;
+    }
+    .trait_droit2_menu4{
+        margin-left: -40px;
+    }
+    .trait_gauche3_menu4{
+        margin-right: -50px;
+    }
+    .trait_droit3_menu4{
+        margin-left: -50px;
+    }
+
 }
