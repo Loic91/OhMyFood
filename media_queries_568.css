@@ -1,17 +1,22 @@
 @media screen and (max-width: 568px) { 
-#logo img{
+body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #logo img{
     width: 720px;
     background-color: #579C87;
     padding-left: 155px;
     padding-right: 185px;
     }
 
-    #bloc_page{
-        width: 250%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 250px;
-    }
+#bloc_page{
+    width: 240%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 250px;
+}
 
     footer{
         height: 200px;
@@ -31,10 +36,6 @@
         border: none;
         color: #FDCB46;
         font-family: Montserrat, sans-serif;
-    }
-
-    .menu{
-        padding-right: 40px;
     }
 
     .container_bouton{
@@ -70,5 +71,11 @@
         width: 115%;
         display: block;
         height: 80em;
+    }
+
+    .mentions_legales{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

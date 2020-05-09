@@ -1,10 +1,8 @@
 @charset "UTF-8";
 body {
-  margin: 0; }
-
-#bloc_page {
-  width: 1200px;
-  margin: auto; }
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0; }
 
 #logo img {
   width: 200px;
@@ -230,7 +228,7 @@ button a:hover {
 
 /* Changement Opacity au survol des Menu */
 li .opacity {
-  opacity: 0.5; }
+  opacity: 0.7; }
 
 li .opacity:hover {
   opacity: 1; }
