@@ -1,7 +1,10 @@
 body{
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
+    margin: 0;
+}
+
+#bloc_page{
+    width: 1200px;
+    margin: auto;
 }
 
 #logo img{
@@ -92,7 +95,7 @@ $cd-btn: #61A682;
 .btn {
     background: $cd-btn;
     font-size: 1.5rem;
-    cursor: pointer;
+    
 	padding: 1.2rem 2rem;
 	border-radius: 20px;
     border: 1px solid #F9CC27;
@@ -172,15 +175,6 @@ footer button{
 button:hover{
     animation: wiggle 75ms infinite;
     animation-timing-function: linear;
-}
-
-a{
-	text-decoration: none;
-    color: #F9CC27;
-}
-
-button a:hover{
-    color: white;
 }
 
 @keyframes wiggle {
