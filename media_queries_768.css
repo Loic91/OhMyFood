@@ -1,14 +1,14 @@
-@media screen and (max-width: 568px) { 
+@media screen and (max-width: 768px) { 
 body{
         margin-left: 0;
         margin-right: 0;
     }
 
     #logo img{
-    width: 720px;
+    /* width: 720px; */
     background-color: #579C87;
-    padding-left: 155px;
-    padding-right: 185px;
+    /* padding-left: 155px; */
+    /* padding-right: 185px; */
     }
 
 #bloc_page{
@@ -19,7 +19,7 @@ body{
 }
 
     footer{
-        height: 200px;
+        height: auto;
         width: 100%;
         background-color: #579C87;
         display: flex;
@@ -31,20 +31,16 @@ body{
     footer button{
         height: 100%;
         padding: 17px;
-        font-size: 50px;
+        /* font-size: 50px; */
         background-color: #579C87;
         border: none;
         color: #FDCB46;
         font-family: Montserrat, sans-serif;
     }
 
-    .container_bouton{
-        margin-bottom: 350px;
-    }
-
     .btn {
-        font-size: 3.5rem;
-        padding: 4.2rem 5rem;
+        /* font-size: 3.5rem;
+        padding: 4.2rem 5rem; */
         justify-content: space-around;
         margin-left: auto;
         margin-right: auto;
@@ -71,6 +67,18 @@ body{
         width: 115%;
         display: block;
         height: 80em;
+    }
+
+    .menu_bloc_1, .menu_bloc_2{
+        padding-left: 10px;
+        padding-right:10px;
+        display:block;
+
+    }
+    .menu{
+        width:auto;
+        display:block;
+        text-align:center;
     }
 
     .mentions_legales{
