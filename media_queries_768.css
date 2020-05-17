@@ -1,22 +1,26 @@
 @media screen and (max-width: 768px) { 
-body{
+/* body{
         margin-left: 0;
         margin-right: 0;
-    }
+    } */
 
     #logo img{
     /* width: 720px; */
-    background-color: #579C87;
+    background-color: #61A682;
     /* padding-left: 155px; */
     /* padding-right: 185px; */
     }
 
-#bloc_page{
-    width: 240%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 250px;
-}
+    #bloc_page{
+        /* width: 240%; */
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 250px; */
+    }
+
+    main{
+        display: block;
+    }
 
     footer{
         height: auto;
@@ -46,43 +50,135 @@ body{
         margin-right: auto;
     }
 
-    #bloc_menu_1{
+    
+    
+
+    
+
+    /* #bloc_menu_2{
         width: 115%;
         display: block;
-    }
+    } */
 
-    #bloc_menu_2{
+    /* #bloc_menu_3{
         width: 115%;
         display: block;
-        height: 70em;
-    }
+    } */
 
-    #bloc_menu_3{
+    /* #bloc_menu_4{
         width: 115%;
         display: block;
-        height: 80em;
-    }
+    } */
 
-    #bloc_menu_4{
-        width: 115%;
-        display: block;
-        height: 80em;
-    }
-
-    .menu_bloc_1, .menu_bloc_2{
-        padding-left: 10px;
-        padding-right:10px;
+    /* .cartes_bloc_1, .cartes_bloc_2{
+        margin-left: 20px;
+        margin-right: 20px;
         display:block;
-
+        width: 70%;
     }
-    .menu{
+    .carte_1{
+        display: block;
+    } */
+    /* .menu{
         width:auto;
         display:block;
         text-align:center;
-    }
+    } */
 
     .mentions_legales{
-        display: grid;
+        font-size: 1em;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 100px;
+    }
+
+    .menu_titre img{
+        width: 17%; /*Modification de la taille des traits du Menu */
+    }
+
+    .menu_entree{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /* entree */
+.trait_gauche{
+    margin-right: 55px;
+    width: 2em;
+}
+.trait_droit{
+    margin-left: 55px;
+}
+/* plat */
+.trait_gauche2{
+    margin-right: 25px;
+}
+.trait_droit2{
+    margin-left: 25px;
+}
+/* dessert*/
+.trait_gauche3{
+    margin-right: 10px;
+}
+.trait_droit3{
+    margin-left: 10px;
+}
+
+    .menu_degrade{
         font-size: 2em;
+    } 
+
+    #prix_size {
+        font-size: 1.2em;
+    }
+
+    .titre_souligne_menu2, .titre_souligne_2_menu2, .titre_souligne_3_menu2{
+        font-size: 0.8em;
+    }
+
+    .titre_souligne_menu3, .titre_souligne_2_menu3, .titre_souligne_3_menu3 {
+        font-size: 1.1em;
+    }
+
+    .trait_gauche3_menu3{
+        margin-right: 10px;
+    }
+    .trait_droit3_menu3{
+        margin-left: 10px;
+    }
+
+    .container_1_menu3, .container_2_menu3, .container_3_menu3 {
+        font-size: 1.1em;
+    }
+
+    .menu_degrade_2{
+        font-size: 3em;
+    }
+
+    .trait_gauche_menu4{
+        margin-right: 60px;
+    }
+    .trait_droit_menu4{
+        margin-left: 60px;
+    }
+    .trait_gauche2_menu4{
+        margin-right: 20px;
+    }
+    .trait_droit2_menu4{
+        margin-left: 20px;
+    }
+    .trait_gauche3_menu4{
+        margin-right: 10px;
+    }
+    .trait_droit3_menu4{
+        margin-left: 10px;
+    }
+
+    .container_1_menu3, .container_2_menu3, .container_3_menu3 {
+    font-size: 1.0em;
+    }
+
+    .menu_degrade_3{
+        font-size: 2.5em;
     }
 }

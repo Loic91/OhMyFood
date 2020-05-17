@@ -3,99 +3,28 @@ body{
 }
 
 #bloc_page{
-    // width: 1200px;
     margin: auto;
 }
 
-#logo img{
-    width: 200px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    /* placement du logo dans un "display: bloc" et les propriété "margin" le placent au milieu */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#logo h1{
+    font-family: 'Chivo', sans-serif;
+    font-size: 2.5em;
+    color: #F9CC27;
+    margin-top: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 header{
     background-color: #61A682;
 }
 
-
-/* !!!!!!!!! Menu côte à côte !!!!!!!! */
-.menu{
-    // width: 1000px;
-    display: block;
-    margin: auto;
-    padding-top: 30px;
-}
-
-.menu_bloc_1{
-	display: flex; 
-	justify-content: space-between; /* Éléments centrés et étirés sur tout l'axe */
-	list-style-type: none;
-}
-	
-.menu_bloc_1 .opacity{
-    box-shadow: 4px 4px 4px  #CFE1D8;
-    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
-    display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
-    overflow: hidden; /* permet de cacher le débordement du zoom */
-    
-}
-
-.menu_bloc_1 li :hover {
-    transition-property: transform;
-    transition-duration: 500ms;
-    transform:scale(1.2);
-    -ms-transform:scale(1.2); /* IE 9 */
-    -moz-transform:scale(1.2); /* Firefox */
-    -webkit-transform:scale(1.2); /* Safari and Chrome */
-    -o-transform:scale(1.2); /* Opera */
-}
-
-.menu_bloc_1 img{
-    max-width: 100%;
-    margin-bottom: -5px;
-}
-
-.menu_bloc_2{
-	display: flex; 
-	justify-content: space-between; /* Éléments centrés et étirés sur tout l'axe */
-    list-style-type: none;
-}
-	
-.menu_bloc_2 .opacity{
-    box-shadow: 4px 4px 4px  #CFE1D8;
-    margin-bottom: 80px;
-    margin-top: 30px;
-    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
-    display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
-    overflow: hidden; /* permet de cacher le débordement du zoom */
-}
-
-.menu_bloc_2 img{
-    max-width: 100%;
-    margin-bottom: -5px;
-}
-
-.menu_bloc_2 li :hover {
-    transition-property: transform;
-    transition-duration: 500ms;
-    transform:scale(1.2);
-    -ms-transform:scale(1.2); /* IE 9 */
-    -moz-transform:scale(1.2); /* Firefox */
-    -webkit-transform:scale(1.2); /* Safari et Chrome */
-    -o-transform:scale(1.2); /* Opera */
-}
-
-
 /* !!!!!!!!! Bouton Prochainemment !!!!!!!!! */
 $cd-btn: #61A682;
 .btn {
     background: $cd-btn;
-    font-size: 1.5rem;
-    
+    font-size: 1.4rem;
+    margin-top: 30px;
 	padding: 1.2rem 2rem;
 	border-radius: 20px;
     border: 1px solid #F9CC27;
@@ -150,7 +79,6 @@ $cd-btn: #61A682;
     }
 }
 
-
 /* !!!!!!!!! Footer !!!!!!!! */
 footer{
     height: 70px;
@@ -177,83 +105,213 @@ button:hover{
     animation-timing-function: linear;
 }
 
+footer a{
+    color: #FDCB46;
+}
+
 @keyframes wiggle {
     0% { transform: translate(2px, 0); }
     50% { transform: translate(-2px, 0); }
     100% { transform: translate(2px, 0); }
 }
+
 /* !!!!!!!!!! Mentions Légales !!!!!!!!!! */
 .mentions_legales{
-    max-width: 1000px;
+    // max-width: 1000px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 /* !!!!!!!!!! Carte des Menus !!!!!!!!!! */
-/* Menu 1*/
-#bloc_menu_1{
-    width: 90%;
-    margin: auto;
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu */
+#carte_1{
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 150px;
-    box-shadow: 0px 0px 22px -7px black;
+    box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
     background-color: #fcdfdb;
-    color: #3d1319;
 }
-
-/* Menu 2 */
-#bloc_menu_2{
-    width: 90%;
-    margin: auto;
+.carte_titre, .carte_titre_2, .carte_titre_3, .carte_titre_4{
+    text-align:center;
+    height: 450px;
+}
+h3{
+    font-family: 'Cookie', cursive;
+    font-size: 1.5em;
+}
+h4{
+    font-family: cursive;
+    font-size: 2.8em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#carte_1 .carte_titre{
+    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
+    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
+    overflow: hidden; /* permet de cacher le débordement du zoom */
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#carte_1 .carte_titre:hover {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+}
+#carte_2{
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 150px;
-    box-shadow: 0px 0px 22px -7px black;
+    box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
     background-color: #FFF5FE;
-    color: #3d1319;
 }
-
-/* Menu 3 */
-#bloc_menu_3{
-    width: 90%;
-    margin: auto;
+.menu_degrade2{
+    /* Titre du Menu */
+    font-size: 1.5em;
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    background: linear-gradient(to left, #6E4CCC 0%,  #A56799 50%, #C67412 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color_menu{
+    color: #C67412;
+    font-family: 'Donegal One', serif;
+    font-family: 'Jomolhari', serif;
+    font-size: 1.2em;
+}
+#carte_2 .carte_titre_2{
+    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
+    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
+    overflow: hidden; /* permet de cacher le débordement du zoom */
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#carte_2 .carte_titre_2:hover {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+}
+#carte_3{
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 150px;
-    box-shadow: 0px 0px 22px -7px black;
+    box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
     background-color: #EDEFEF;
-    color: #3d1319;
 }
-
-/* Menu 4 */
-#bloc_menu_4{
-    width: 90%;
-    margin: auto;
+.menu_degrade3{
+    /* Titre du Menu */
+    font-size: 1.5em;
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    background: linear-gradient(to left, #C5E0F9 0%, #0228DD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color_menu_3{
+    color: #0228DD;
+}
+#carte_3 .carte_titre_3{
+    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
+    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
+    overflow: hidden; /* permet de cacher le débordement du zoom */
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#carte_3 .carte_titre_3:hover {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+}
+#carte_4{
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 150px;
-    box-shadow: 0px 0px 22px -7px black;
+    box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
     background-color: #FDFFFD;
-    color: #3d1319;
+}
+.menu_degrade4{
+    /* Titre du Menu */
+    font-size: 1.5em;
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    background: linear-gradient(to left, #BFFF80 0%, #3E923A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color_menu_4{
+    color: #3E923A;
+}
+#carte_4 .carte_titre_4{
+    /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
+    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
+    overflow: hidden; /* permet de cacher le débordement du zoom */
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#carte_4 .carte_titre_4:hover {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
 }
 
 /* Changement Opacity au survol des Menu */
 .opacity{
-    opacity: 0.7;
-}
-
-.opacity:hover{
     opacity: 1;
 }
 
+.opacity:hover{
+    opacity: 0.6;
+}
 
-main{
+
+.entree, .plat, .dessert{
     font-family: 'Cookie', cursive;
     font-size: 1.3em;
 }
@@ -378,14 +436,14 @@ main{
 }
 
 /*  Menu 1 - soulignement */
-a {
+.titre_souligne {
     display: inline;
     position: relative;
     color: black;
     text-decoration: none;
 }
 
-a :after{
+.titre_souligne:after{
     content: '';
     display: block;
     position: absolute;
@@ -397,7 +455,123 @@ a :after{
     background: black;
 }
 
-a :hover:after {
+.titre_souligne:hover:after {
+        width: 100%;
+}
+
+.titre_souligne_2 {
+    display: inline;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.titre_souligne_2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: black;
+}
+
+.titre_souligne_2:hover:after {
+        width: 100%;
+}
+
+.titre_souligne_3 {
+    display: inline;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.titre_souligne_3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: black;
+}
+
+.titre_souligne_3:hover:after {
+        width: 100%;
+}
+
+/*  Menu 3 - soulignement */
+.titre_souligne_menu3 {
+    display: inline;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.titre_souligne_menu3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: black;
+}
+
+.titre_souligne_menu3:hover:after {
+        width: 100%;
+}
+
+.titre_souligne_2_menu3{
+    display: inline;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.titre_souligne_2_menu3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: black;
+}
+
+.titre_souligne_2_menu3:hover:after {
+        width: 100%;
+}
+
+.titre_souligne_3_menu3 {
+    display: inline;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.titre_souligne_3_menu3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: black;
+}
+
+.titre_souligne_3_menu3:hover:after {
         width: 100%;
 }
 
@@ -434,24 +608,25 @@ h2{
 /* Menu 1 */
 /* entree */
 .trait_gauche{
-    margin-right: 35px;
+    margin-right: 100px;
+    width: 2em;
 }
 .trait_droit{
-    margin-left: 35px;
+    margin-left: 100px;
 }
 /* plat */
 .trait_gauche2{
-    margin-right: 10px;
+    margin-right: 70px;
 }
 .trait_droit2{
-    margin-left: 10px;
+    margin-left: 70px;
 }
 /* dessert*/
 .trait_gauche3{
-    margin-right: 0;
+    margin-right: 50px;
 }
 .trait_droit3{
-    margin-left: 0;
+    margin-left: 50px;
 }
 
 /* Menu dégradé (Menu 2) */
@@ -537,24 +712,24 @@ h2{
 
 /* entree */
 .trait_gauche_menu4{
-    margin-right: 20px;
+    margin-right: 120px;
 }
 .trait_droit_menu4{
-    margin-left: 20px;
+    margin-left: 120px;
 }
 /* plat */
 .trait_gauche2_menu4{
-    margin-right: 0;
+    margin-right: 70px;
 }
 .trait_droit2_menu4{
-    margin-left: 0;
+    margin-left: 70px;
 }
 /* dessert*/
 .trait_gauche3_menu4{
-    margin-right: 0;
+    margin-right: 60px;
 }
 .trait_droit3_menu4{
-    margin-left: 0;
+    margin-left: 60px;
 }
 
 .menu_entree{
@@ -563,10 +738,11 @@ h2{
     justify-content: space-between;
     flex-flow: row nowrap;
     flex: 1 1 0;
-    line-height: 1.2rem;
+    line-height: 1.2rem; /* Espace entre les lignes */
     margin-left: 105px;
     margin-right: 105px;
 }
+
 
 #prix_size{
     font-size: 1.6em;
@@ -587,7 +763,51 @@ h2{
     font-size: 60px;
 }
 
-h3{
-    margin-left: 25px;
+.menu_titre img{ 
+    width: 33%; /*Modification de la taille des traits du Menu 1*/
 }
 
+/* !!!!!!! Page Menu !!!!!!!!*/
+#bloc{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    box-shadow: 0px 0px 22px -7px black;
+    display: flex;
+    flex-direction: column;
+    background-color: #fcdfdb;
+}
+
+#bloc_2 {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    box-shadow: 0px 0px 22px -7px black;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF5FE;
+}
+
+#bloc_3 {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    box-shadow: 0px 0px 22px -7px black;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEFEF;
+}
+
+#bloc_4 {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    box-shadow: 0px 0px 22px -7px black;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDFFFD;
+}
