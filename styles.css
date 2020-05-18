@@ -104,7 +104,7 @@ footer a {
   text-align: center; }
 
 /* !!!!!!!!!! Carte des Menus !!!!!!!!!! */
-main {
+main section {
   display: flex;
   justify-content: center; }
 
@@ -124,8 +124,7 @@ main {
   height: 450px; }
 
 h3 {
-  font-family: 'Cookie', cursive;
-  font-size: 1.5em; }
+  font-family: 'Cookie', cursive; }
 
 h4 {
   font-family: cursive;
@@ -171,11 +170,11 @@ a {
   font-size: 1.5em;
   padding-top: 50px;
   font-weight: bold;
-  font-family: 'Lobster Two', cursive;
   color: white;
   background: linear-gradient(to left, #6E4CCC 0%, #A56799 50%, #C67412 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  font-family: 'Lobster Two', cursive; }
 
 .color_menu {
   color: #C67412;
@@ -364,8 +363,11 @@ a {
 #phrase1 {
   display: inline;
   position: relative;
-  color: #A56799;
+  color: #C67412;
   text-decoration: none; }
+
+#phrase1 a {
+  color: #C67412; }
 
 #phrase2 :after {
   content: '';
@@ -387,6 +389,9 @@ a {
   color: #C67412;
   text-decoration: none; }
 
+#phrase2 a {
+  color: #A56799; }
+
 #phrase3 :after {
   content: '';
   display: block;
@@ -406,6 +411,9 @@ a {
   position: relative;
   color: #6E4CCC;
   text-decoration: none; }
+
+#phrase3 a {
+  color: #6E4CCC; }
 
 /*  Menu 1 - soulignement */
 .titre_souligne {
@@ -555,6 +563,10 @@ h2 {
 .menu_titre {
   text-align: center; }
 
+.m_titre {
+  display: flex;
+  justify-content: center; }
+
 /* Menu 1 */
 /* entree */
 .trait_gauche {
@@ -613,24 +625,30 @@ h2 {
 
 /* entree */
 .trait_gauche_menu2 {
-  margin-right: 0px; }
+  margin-right: 0px;
+  height: 1vw; }
 
 .trait_droit_menu2 {
-  margin-left: 0px; }
+  margin-left: 0px;
+  height: 1vw; }
 
 /* plat */
 .trait_gauche2_menu2 {
-  margin-right: 20px; }
+  margin-right: 20px;
+  height: 1vw; }
 
 .trait_droit2_menu2 {
-  margin-left: 20px; }
+  margin-left: 20px;
+  height: 1vw; }
 
 /* dessert*/
 .trait_gauche3_menu2 {
-  margin-right: 5px; }
+  margin-right: 5px;
+  height: 1vw; }
 
 .trait_droit3_menu2 {
-  margin-left: 5px; }
+  margin-left: 5px;
+  height: 1vw; }
 
 /* entree */
 .trait_gauche_menu3 {

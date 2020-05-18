@@ -93,7 +93,8 @@
     }
 
     .menu_titre img{
-        width: 17%; /*Modification de la taille des traits du Menu */
+        width: 17%;
+         /*Modification de la taille des traits du Menu */
     }
 
     .menu_entree{
@@ -180,5 +181,9 @@
 
     .menu_degrade_3{
         font-size: 2.5em;
+    }
+
+    main section{
+        display: block;
     }
 }
