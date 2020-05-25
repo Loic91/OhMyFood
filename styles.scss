@@ -34,7 +34,8 @@ $cd-btn: #61A682;
 .container_bouton{
     display: flex;
 	justify-content: center;
-	margin-bottom: 150px;
+    margin-bottom: 150px;
+    margin-top: 50px;
 }
 
 .btn a{
@@ -71,7 +72,7 @@ $cd-btn: #61A682;
     
     @keyframes points_suspension {
         0%, 60%, 100% {
-            transform: initial;
+            transform: translateX(0);
         }
         30% {
             transform: translateY(-15px);
@@ -125,10 +126,6 @@ footer a{
 
 /* !!!!!!!!!! Carte des Menus !!!!!!!!!! */
 
-main{
-    // display: flex;
-    //justify-content: center;
-}
 main section{
     display:flex;
     justify-content: center;
@@ -136,10 +133,10 @@ main section{
 
 /* Menu */
 #carte_1{
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 50px;
-    margin-bottom: 150px;
     box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
@@ -147,15 +144,15 @@ main section{
 }
 .carte_titre, .carte_titre_2, .carte_titre_3, .carte_titre_4{
     text-align:center;
-    height: 450px;
+    height: 350px;
 }
 h3{
     font-family: 'Cookie', cursive;
-    // font-size: 1.5em;
+    font-size: 1.5em;
 }
 h4{
     font-family: cursive;
-    font-size: 2.8em;
+    font-size: 2.5em;
 }
 a{
     text-decoration: none;
@@ -163,7 +160,6 @@ a{
 }
 #carte_1 .carte_titre{
     /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
-    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
     margin-left: 50px;
@@ -179,10 +175,10 @@ a{
     -o-transform:scale(1.2); /* Opera */
 }
 #carte_2{
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 50px;
-    margin-bottom: 150px;
     box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
@@ -190,9 +186,8 @@ a{
 }
 .menu_degrade2{
     /* Titre du Menu */
-    font-size: 1.5em;
-    padding-top: 50px;
-    font-weight: bold;
+    // padding-top: 50px;
+    // font-weight: bold;
     color: white;
     background: linear-gradient(to left, #6E4CCC 0%,  #A56799 50%, #C67412 100%);
     -webkit-background-clip: text;
@@ -203,15 +198,14 @@ a{
     color: #C67412;
     font-family: 'Donegal One', serif;
     font-family: 'Jomolhari', serif;
-    font-size: 1.2em;
 }
 #carte_2 .carte_titre_2{
     /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
     // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #carte_2 .carte_titre_2:hover {
     transition-property: transform;
@@ -223,10 +217,10 @@ a{
     -o-transform:scale(1.2); /* Opera */
 }
 #carte_3{
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 50px;
-    margin-bottom: 150px;
     box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
@@ -234,9 +228,8 @@ a{
 }
 .menu_degrade3{
     /* Titre du Menu */
-    font-size: 1.5em;
-    padding-top: 50px;
-    font-weight: bold;
+    // padding-top: 50px;
+    // font-weight: bold;
     font-family: 'Dancing Script', cursive;
     color: white;
     background: linear-gradient(to left, #C5E0F9 0%, #0228DD 100%);
@@ -251,8 +244,8 @@ a{
     // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #carte_3 .carte_titre_3:hover {
     transition-property: transform;
@@ -264,10 +257,10 @@ a{
     -o-transform:scale(1.2); /* Opera */
 }
 #carte_4{
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 50px;
-    margin-bottom: 150px;
     box-shadow: 5px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
@@ -275,9 +268,9 @@ a{
 }
 .menu_degrade4{
     /* Titre du Menu */
-    font-size: 1.5em;
-    padding-top: 50px;
-    font-weight: bold;
+    // font-size: 1.5em;
+    // padding-top: 50px;
+    // font-weight: bold;
     font-family: 'Kaushan Script', cursive;
     color: white;
     background: linear-gradient(to left, #BFFF80 0%, #3E923A 100%);
@@ -292,8 +285,8 @@ a{
     // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #carte_4 .carte_titre_4:hover {
     transition-property: transform;
@@ -627,25 +620,31 @@ h2{
 /* Menu 1 */
 /* entree */
 .trait_gauche{
-    margin-right: 100px;
-    width: 2em;
+    margin-right: 30px;
+    // width: 2em;
+    height: 1vw;
 }
 .trait_droit{
-    margin-left: 100px;
+    margin-left: 30px;
+    height: 1vw;
 }
 /* plat */
 .trait_gauche2{
-    margin-right: 70px;
+    margin-right: 10px;
+    height: 1vw;
 }
 .trait_droit2{
-    margin-left: 70px;
+    margin-left: 10px;
+    height: 1vw;
 }
 /* dessert*/
 .trait_gauche3{
-    margin-right: 50px;
+    margin-right: 0px;
+    height: 1vw;
 }
 .trait_droit3{
-    margin-left: 50px;
+    margin-left: 0px;
+    height: 1vw;
 }
 
 /* Menu dégradé (Menu 2) */
@@ -716,45 +715,57 @@ h2{
 /* entree */
 .trait_gauche_menu3{
     margin-right: 5px;
+    height: 1vw;
 }
 .trait_droit_menu3{
     margin-left: 5px;
+    height: 1vw;
 }
 /* plat */
 .trait_gauche2_menu3{
     margin-right: 10px;
+    height: 1vw;
 }
 .trait_droit2_menu3{
     margin-left: 10px;
+    height: 1vw;
 }
 /* dessert*/
 .trait_gauche3_menu3{
-    margin-right: 30px;
+    margin-right: 10px;
+    height: 1vw;
 }
 .trait_droit3_menu3{
-    margin-left: 30px;
+    margin-left: 10px;
+    height: 1vw;
 }
 
 /* entree */
 .trait_gauche_menu4{
-    margin-right: 120px;
+    margin-right: 40px;
+    height: 1vw;
 }
 .trait_droit_menu4{
-    margin-left: 120px;
+    margin-left: 40px;
+    height: 1vw;
 }
 /* plat */
 .trait_gauche2_menu4{
-    margin-right: 70px;
+    margin-right: 8px;
+    height: 1vw;
 }
 .trait_droit2_menu4{
-    margin-left: 70px;
+    margin-left: 8px;
+    height: 1vw;
 }
 /* dessert*/
 .trait_gauche3_menu4{
-    margin-right: 60px;
+    margin-right: 5px;
+    height: 1vw;
 }
 .trait_droit3_menu4{
-    margin-left: 60px;
+    margin-left: 5px;
+    height: 1vw;
 }
 
 .menu_entree{
@@ -797,7 +808,7 @@ h2{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     box-shadow: 0px 0px 22px -7px black;
     display: flex;
     flex-direction: column;
@@ -808,7 +819,7 @@ h2{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     box-shadow: 0px 0px 22px -7px black;
     display: flex;
     flex-direction: column;
@@ -819,7 +830,7 @@ h2{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     box-shadow: 0px 0px 22px -7px black;
     display: flex;
     flex-direction: column;
@@ -830,9 +841,31 @@ h2{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     box-shadow: 0px 0px 22px -7px black;
     display: flex;
     flex-direction: column;
     background-color: #FDFFFD;
+}
+
+/* !!!!!!!! Bouton Retour !!!!!!!!! */
+#bouton_retour {
+    background: $cd-btn;
+    font-size: 1rem;
+    margin-top: 30px;
+	padding: 1.2rem 2rem;
+	border-radius: 20px;
+    border: 1px solid #F9CC27;
+    font-family: Montserrat, sans-serif;
+}
+
+#container_bouton_retour{
+    display: flex;
+	justify-content: center;
+    margin-bottom: 150px;
+}
+
+#bouton_retour a{
+	text-decoration: none;
+	color: #F9CC27;
 }
