@@ -91,7 +91,8 @@ footer{
     left: 0;
     bottom: 0;
 }
-footer button{
+// footer button{
+footer a {
     height: 100%;
     padding: 17px;
     font-size: 22px;
@@ -101,7 +102,8 @@ footer button{
     font-family: Montserrat, sans-serif;
 }
 
-button:hover{
+// button:hover{
+footer a:hover{
     animation: wiggle 75ms infinite;
     animation-timing-function: linear;
 }
