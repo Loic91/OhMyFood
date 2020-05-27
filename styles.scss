@@ -203,7 +203,6 @@ a{
 }
 #carte_2 .carte_titre_2{
     /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
-    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
     margin-left: 20px;
@@ -230,8 +229,6 @@ a{
 }
 .menu_degrade3{
     /* Titre du Menu */
-    // padding-top: 50px;
-    // font-weight: bold;
     font-family: 'Dancing Script', cursive;
     color: white;
     background: linear-gradient(to left, #C5E0F9 0%, #0228DD 100%);
@@ -243,7 +240,6 @@ a{
 }
 #carte_3 .carte_titre_3{
     /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
-    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
     margin-left: 30px;
@@ -270,9 +266,6 @@ a{
 }
 .menu_degrade4{
     /* Titre du Menu */
-    // font-size: 1.5em;
-    // padding-top: 50px;
-    // font-weight: bold;
     font-family: 'Kaushan Script', cursive;
     color: white;
     background: linear-gradient(to left, #BFFF80 0%, #3E923A 100%);
@@ -284,7 +277,6 @@ a{
 }
 #carte_4 .carte_titre_4{
     /* me permet de faire le zoom tout en gardant la largeur du cadre et en utilisant les fonctions :hover en dessous */
-    // display: inline-block; /* change le type d'affichage par défaut en inline bloc*/
     overflow: hidden; /* permet de cacher le débordement du zoom */
     margin-top: 100px;
     margin-left: 30px;
@@ -361,7 +353,6 @@ a{
     font-family: 'Patrick Hand', cursive;
     font-size: 1.3em;
 }
-
 
 /*  Menu 2 - soulignement  */
 #phrase1 :after{
@@ -623,7 +614,6 @@ h2{
 /* entree */
 .trait_gauche{
     margin-right: 30px;
-    // width: 2em;
     height: 1vw;
 }
 .trait_droit{
@@ -782,8 +772,9 @@ h2{
 }
 
 
-#prix_size{
-    font-size: 1.6em;
+.prix_size{
+    font-size: 1.5em;
+    margin-top: 15px;
 }
 
 

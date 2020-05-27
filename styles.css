@@ -712,8 +712,9 @@ h2 {
   margin-left: 105px;
   margin-right: 105px; }
 
-#prix_size {
-  font-size: 1.6em; }
+.prix_size {
+  font-size: 1.5em;
+  margin-top: 15px; }
 
 #phrase_footer {
   display: flex;
